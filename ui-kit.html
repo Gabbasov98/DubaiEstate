@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI-kit</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<style>
+    .ui-kit {
+        padding: 30px;
+    }
+    
+    .ui-kit__buttons {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+</style>
+
+<body>
+    <section class='ui-kit'>
+        <div class='container'>
+            <div class='ui-kit__buttons'>
+                <button class="btn-yellow">Оставить заявку</button>
+                <button class="btn-outline-yellow">Показать больше</button>
+                <button class="btn-outline-yellow btn-outline-yellow--reverse btn-icon-right">
+                    <span>Подробнее</span>
+                    <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 15.5L11 10.5L6 5.5L7 3.5L14 10.5L7 17.5L6 15.5Z" fill="#C39F7B"/>
+                    </svg>
+                </button>
+                <button class="btn-dark">Назад</button>
+                <button class="btn-link">Хочу лично обсудить со специалистом</button>
+                <button class="pagination-btn pagination-btn--prev">
+                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15.3999 16.5008L9.8999 11.0008L15.3999 5.50078L14.2999 3.30078L6.5999 11.0008L14.2999 18.7008L15.3999 16.5008Z" fill="white"/>
+                    </svg>
+                </button>
+                <button class="pagination-btn pagination-btn--next">
+                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.6001 16.5008L12.1001 11.0008L6.6001 5.50078L7.7001 3.30078L15.4001 11.0008L7.7001 18.7008L6.6001 16.5008Z" fill="white"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

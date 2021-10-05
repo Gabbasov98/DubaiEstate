@@ -1,0 +1,178 @@
+// Colors
+$black:#172031;
+$yellow:#C39F7B;
+$white:#FFFFFF;
+$dark:#1E283C;
+$grey:#7D879C;
+// Fonts
+$druk: "Druk Text Wide Cyr",
+sans-serif;
+$raleway: "Raleway",
+sans-serif;
+// $cormonant: "Cormorant Garamond",
+// sans-serif;
+// Buttons
+.btn-yellow {
+    padding: 0 33px;
+    height: 55px;
+    background: #C39F7B;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 15px;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:hover {
+        background: #A08467;
+    }
+}
+
+.btn-outline-yellow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 15px;
+    color: #C39F7B;
+    background: rgba(195, 159, 123, 0.1);
+    border: 1px solid #C39F7B;
+    border-radius: 30px;
+    padding: 0 33px;
+    height: 55px;
+    &:hover {
+        background-color: transparent;
+    }
+}
+
+.btn-outline-yellow--reverse {
+    background-color: transparent;
+    &:hover {
+        background: rgba(195, 159, 123, 0.1);
+        color: #C39F7B;
+    }
+}
+
+.btn-icon-right {
+    & svg {
+        margin-left: 10px;
+    }
+}
+
+.btn-dark {
+    font-weight: 600;
+    font-size: 15px;
+    border-radius: 30px;
+    color: #fff;
+    padding: 0 33px;
+    height: 55px;
+    background: $black;
+    &:hover {
+        background: #34415B;
+    }
+}
+
+.btn-link {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 150%;
+    text-decoration-line: underline;
+    color: #C39F7B;
+    &:hover {
+        color: #E9C6A3;
+    }
+}
+
+.pagination-btn {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+}
+
+.pagination-btn--prev {
+    background: #1E283B;
+    &:hover {
+        background: #34415B;
+    }
+}
+
+.pagination-btn--next {
+    background: #C39F7B;
+    box-shadow: 0px 0px 50px rgba(195, 159, 123, 0.5);
+    &:hover {
+        background: #A08467;
+    }
+}
+
+path,
+svg {
+    transition: all .3s;
+}
+
+input,
+textarea {
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 150%;
+    color: #FFFFFF;
+    background: #172031;
+    border-radius: 30px;
+    border: 1px solid transparent;
+    &:focus,
+    &:active {
+        border-color: #C39F7B;
+    }
+    &::placeholder {
+        color: #7D879C;
+    }
+}
+
+textarea {
+    padding: 16px 33px;
+    resize: none;
+}
+
+input:valid {
+    background: #172031 !important;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+    background: #172031 !important;
+}
+
+input:-internal-autofill-selected {
+    background: #172031 !important;
+}
+
+a:focus {
+    color: $yellow;
+}
+
+@media screen and (max-width: 992px) {
+    input,
+    textarea {
+        font-size: 12px;
+    }
+    .btn-yellow,
+    .btn-dark,
+    .btn-link,
+    .btn-outline-yellow--reverse,
+    .btn-outline-yellow {
+        font-size: 12px;
+    }
+    .pagination-btn {
+        width: 38px;
+        height: 38px;
+        & svg {
+            width: 15px;
+        }
+    }
+}
